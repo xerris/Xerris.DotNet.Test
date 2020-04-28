@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xerris.DotNet.TestAutomation", "src\Xerris.DotNet.TestAutomation\Xerris.DotNet.TestAutomation.csproj", "{87B36CE2-072A-483B-8556-BCDA087F5FAB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xerris.DotNet.TestAutomation.Test", "src\Xerris.DotNet.TestAutomation.Test\Xerris.DotNet.TestAutomation.Test.csproj", "{A7405698-36C5-47D1-905F-CD505B781808}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{87B36CE2-072A-483B-8556-BCDA087F5FAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87B36CE2-072A-483B-8556-BCDA087F5FAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87B36CE2-072A-483B-8556-BCDA087F5FAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7405698-36C5-47D1-905F-CD505B781808}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7405698-36C5-47D1-905F-CD505B781808}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7405698-36C5-47D1-905F-CD505B781808}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7405698-36C5-47D1-905F-CD505B781808}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
