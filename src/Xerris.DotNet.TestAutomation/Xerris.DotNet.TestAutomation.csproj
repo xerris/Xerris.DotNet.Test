@@ -1,12 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netcoreapp2.1</TargetFramework>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Moq" Version="4.14.1" />
-      <PackageReference Include="Xerris.DotNet.Core" Version="0.0.39" />
+      <PackageReference Include="Moq" Version="4.16.1" />
+      <PackageReference Include="Xerris.DotNet.Core" Version="0.0.86" />
     </ItemGroup>
 
 </Project>

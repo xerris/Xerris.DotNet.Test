@@ -1,5 +1,6 @@
 using System.Threading.Tasks;
 using Moq;
+using Xerris.DotNet.Core.Validations;
 using Xunit;
 
 namespace Xerris.DotNet.TestAutomation.Test
@@ -33,6 +34,17 @@ namespace Xerris.DotNet.TestAutomation.Test
             var request = new Request {Id = 1};
             service.Setup(x => x.Go(request)).Returns(Task.CompletedTask);
             await client.Go(request);
+        }
+
+        [Fact]
+        public async Task PartialStrict()
+        {
+            var request = new Request();
+            var service = StrictPartial<Service>();
+            service.Setup(x => x.GetCustomer(request)).ReturnsAsync(new Customer());
+
+            var customer = await service.Object.GetCustomer(request);
+            Validate.Begin().IsNotNull(customer, "customer").Check();
         }
     }
 }

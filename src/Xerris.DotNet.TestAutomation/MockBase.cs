@@ -27,6 +27,16 @@ namespace Xerris.DotNet.TestAutomation
             return mocks.Create<T>(MockBehavior.Loose);
         }
 
+        protected Mock<T> StrictPartial<T>() where T : class
+        {
+            return mocks.Create<T>(MockBehavior.Strict);
+        }
+
+        protected Mock<T> LoosePartial<T>() where T : class
+        {
+            return mocks.Create<T>(MockBehavior.Loose);
+        }
+
         public virtual void Dispose()
         {
             mocks.VerifyAll();
