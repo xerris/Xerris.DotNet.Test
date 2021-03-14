@@ -27,14 +27,14 @@ namespace Xerris.DotNet.TestAutomation
             return mocks.Create<T>(MockBehavior.Loose);
         }
 
-        protected Mock<T> StrictPartial<T>() where T : class
+        protected Mock<T> StrictPartial<T>(params object[] args) where T : class
         {
-            return mocks.Create<T>(MockBehavior.Strict);
+            return mocks.Create<T>(MockBehavior.Strict, args);
         }
 
-        protected Mock<T> LoosePartial<T>() where T : class
+        protected Mock<T> LoosePartial<T>(params object[] args) where T : class
         {
-            return mocks.Create<T>(MockBehavior.Loose);
+            return mocks.Create<T>(MockBehavior.Loose, args);
         }
 
         public virtual void Dispose()
