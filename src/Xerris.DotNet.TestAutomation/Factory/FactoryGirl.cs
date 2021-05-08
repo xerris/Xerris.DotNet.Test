@@ -7,7 +7,7 @@ namespace Xerris.DotNet.TestAutomation.Factory
     {
         private static TestFactory Factory { get; set; }
 
-        private static TestFactory Instance => Factory ?? (Factory = new TestFactory());
+        private static TestFactory Instance => Factory ??= new TestFactory();
 
         public static T Build<T>()
         {
