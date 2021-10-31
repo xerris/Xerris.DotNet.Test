@@ -6,7 +6,7 @@
 
     <ItemGroup>
       <PackageReference Include="Moq" Version="4.16.1" />
-      <PackageReference Include="Xerris.DotNet.Core" Version="0.0.89" />
+      <PackageReference Include="Xerris.DotNet.Core" Version="0.0.99" />
     </ItemGroup>
 
 </Project>
