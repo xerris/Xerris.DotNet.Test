@@ -8,38 +8,23 @@ namespace Xerris.DotNet.TestAutomation
         private readonly MockRepository mocks;
 
         protected MockBase()
-        {
-            mocks = new MockRepository(MockBehavior.Strict);
-        }
+            => mocks = new MockRepository(MockBehavior.Strict);
 
         protected Mock<T> Create<T>(MockBehavior behavior = MockBehavior.Strict) where T : class
-        {
-            return mocks.Create<T>(MockBehavior.Strict);
-        }
+            => mocks.Create<T>(MockBehavior.Strict);
 
         protected Mock<T> Strict<T>() where T : class
-        {
-            return mocks.Create<T>(MockBehavior.Strict);
-        }
+            => mocks.Create<T>(MockBehavior.Strict);
 
         protected Mock<T> Loose<T>() where T : class
-        {
-            return mocks.Create<T>(MockBehavior.Loose);
-        }
+            => mocks.Create<T>(MockBehavior.Loose);
 
         protected Mock<T> StrictPartial<T>(params object[] args) where T : class
-        {
-            return mocks.Create<T>(MockBehavior.Strict, args);
-        }
+            => mocks.Create<T>(MockBehavior.Strict, args);
 
         protected Mock<T> LoosePartial<T>(params object[] args) where T : class
-        {
-            return mocks.Create<T>(MockBehavior.Loose, args);
-        }
+            => mocks.Create<T>(MockBehavior.Loose, args);
 
-        public virtual void Dispose()
-        {
-            mocks.VerifyAll();
-        }
+        public virtual void Dispose() => mocks.VerifyAll();
     }
 }
