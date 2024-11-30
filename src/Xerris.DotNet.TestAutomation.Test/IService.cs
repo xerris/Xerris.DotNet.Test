@@ -12,18 +12,12 @@ namespace Xerris.DotNet.TestAutomation.Test
     public class Service : IService
     {
         public Task Go()
-        {
-            return Task.CompletedTask;
-        }
+            => Task.CompletedTask;
 
         public Task Go(Request request)
-        {
-            return Task.CompletedTask;
-        }
+            => Task.CompletedTask;
 
         public virtual Task<Customer> GetCustomer(Request request)
-        {
-            throw new Exception("should be mocked in the Partial Mock Test");
-        }
+            => throw new Exception("should be mocked in the Partial Mock Test");
     }
 }
