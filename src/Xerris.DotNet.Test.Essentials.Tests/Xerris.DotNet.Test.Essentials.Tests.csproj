@@ -24,7 +24,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Xerris.DotNet.TestAutomation\Xerris.DotNet.TestAutomation.csproj" />
+      <ProjectReference Include="..\Xerris.DotNet.Test.Essentials\Xerris.DotNet.Test.Essentials.csproj" />
     </ItemGroup>
 
 </Project>

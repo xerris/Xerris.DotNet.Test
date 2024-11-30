@@ -1,6 +1,6 @@
 using System;
 
-namespace Xerris.DotNet.TestAutomation.Factory
+namespace Xerris.DotNet.Test.Essentials.Factory
 {
     public static class FactoryExtensions
     {

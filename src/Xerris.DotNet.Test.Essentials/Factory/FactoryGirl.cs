@@ -3,7 +3,7 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Threading;
 
-namespace Xerris.DotNet.TestAutomation.Factory;
+namespace Xerris.DotNet.Test.Essentials.Factory;
 
 public static class FactoryGirl
 {

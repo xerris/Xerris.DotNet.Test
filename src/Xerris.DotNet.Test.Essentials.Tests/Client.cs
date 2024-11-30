@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace Xerris.DotNet.TestAutomation.Test
+namespace Xerris.DotNet.Test.Essentials.Tests
 {
     public class Client(IService service)
     {

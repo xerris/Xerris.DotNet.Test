@@ -1,4 +1,4 @@
-name: Publish Xerris.DotNet.Test
+name: Publish Xerris.DotNet.Test.Essentials
 
 on:
   pull_request:
@@ -10,8 +10,8 @@ jobs:
     if: github.event.pull_request.merged == true
     uses: xerris/xerris-common-workflows/.github/workflows/build-and-publish-to-nuget.yml@main
     with:
-      csproj-path: './src/Xerris.DotNet.Test/Xerris.DotNet.Test.csproj'
-      nuget-package-name: 'xerris.dotnet.testautomation'
+      csproj-path: './src/Xerris.DotNet.Test.Essentials/Xerris.DotNet.Test.Essentials.csproj'
+      nuget-package-name: 'xerris.dotnet.test.essentials'
     secrets:
       NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
       NUGET_SOURCE_URI: ${{ secrets.NUGET_SOURCE_URI }}

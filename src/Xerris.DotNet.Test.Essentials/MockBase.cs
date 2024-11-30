@@ -1,7 +1,7 @@
 using System;
 using Moq;
 
-namespace Xerris.DotNet.TestAutomation
+namespace Xerris.DotNet.Test.Essentials
 {
     public abstract class MockBase : IDisposable
     {
