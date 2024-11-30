@@ -3,7 +3,7 @@ using Moq;
 using Xerris.DotNet.Core.Validations;
 using Xunit;
 
-namespace Xerris.DotNet.TestAutomation.Test
+namespace Xerris.DotNet.Test.Essentials.Tests
 {
     public class MockBaseTest : MockBase
     {
