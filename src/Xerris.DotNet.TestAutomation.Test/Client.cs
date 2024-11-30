@@ -2,14 +2,8 @@ using System.Threading.Tasks;
 
 namespace Xerris.DotNet.TestAutomation.Test
 {
-    public class Client
+    public class Client(IService service)
     {
-        private readonly IService service;
-
-        public Client(IService service)
-            => this.service = service;
-
-
         public async Task Go()
             => await service.Go();
 
